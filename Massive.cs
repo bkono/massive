@@ -106,7 +106,7 @@ namespace Massive {
                 providerName = connectionString.ProviderName;
             }
 
-            _factory = DbProviderFactories.GetFactory(_providerName);
+            _factory = DbProviderFactories.GetFactory(providerName);
             ConnectionString = ConfigurationManager.ConnectionStrings[connectionStringName].ConnectionString;
         }
 
